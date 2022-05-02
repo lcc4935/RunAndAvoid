@@ -1,0 +1,171 @@
+/*
+Color scheme:
+black (000000)
+blue (0000ff)
+blue gray (7d8ca3)
+light blue (79a9d1)
+*/
+
+/* Style */
+
+* {
+    font-family: "Avenir", "Calibri", sans-serif;
+}
+
+body {
+    background-color: #7D8CA3;
+}
+
+h1 {
+    color: blue;
+    font-size: 60px;
+    /*-webkit-text-stroke: 1px white;*/
+
+    font-family: "GFS Didot", "Garmond", serif;
+}
+
+h2 {
+    color: black;
+    font-size: 30px;
+}
+
+p, li, a {
+    color: black;
+    font-size: 22px;
+}
+
+/* Grid */
+@media only screen and (min-width: 1700px){
+    #wrapper {
+        background-color: #79a9d1;
+    
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    
+        padding-bottom: 2rem;
+    
+        display: grid;
+    
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    
+        grid-template-areas:
+        "top  top  top"
+        "instructions  game  doc";
+    }
+}
+@media only screen and (max-width: 1700px) {
+    #wrapper {
+        background-color: #79a9d1;
+    
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    
+        padding-bottom: 2rem;
+    
+        display: grid;
+    
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    
+        grid-template-areas:
+        "top  top  top"
+        "instructions  game  doc";
+    }
+}
+@media only screen and (max-width: 1300px) {
+    #wrapper {
+        background-color: #79a9d1;
+    
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    
+        padding-bottom: 2rem;
+    
+        display: grid;
+    
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    
+        grid-template-areas:
+        "top"
+        "instructions"
+        "game"
+        "doc";
+    }
+}
+@media only screen and (max-width: 850px){
+    #wrapper {
+        background-color: #79a9d1;
+    
+        margin: 0rem;
+        padding-bottom: 2rem;
+    
+        display: grid;
+    
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    
+        grid-template-areas:
+        "top"
+        "instructions"
+        "game"
+        "doc";
+    }
+}
+
+#top {
+    grid-area: top;
+    text-align: center;
+}
+
+#game {
+    grid-area: game;
+    text-align: center;
+}
+
+#instructions {
+    grid-area: instructions;
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    text-align: left;
+}
+
+@media only screen and (min-width: 1700px){
+    #doc {
+        grid-area: doc;
+    
+        padding-left: 2rem;
+        padding-right: 2rem;
+    
+        text-align: right;
+    }
+}
+@media only screen and (max-width: 1700px){
+    #doc {
+        grid-area: doc;
+    
+        padding-left: 2rem;
+        padding-right: 2rem;
+    
+        text-align: right;
+    }
+}
+@media only screen and (max-width: 1300px){
+    #doc {
+        grid-area: doc;
+    
+        padding-left: 2rem;
+        padding-right: 2rem;
+    
+        text-align: left;
+    }
+}

@@ -1,0 +1,202 @@
+
+/* style */
+
+body {
+    background-color: #7D8CA3;
+}
+
+h1 {
+    color: black;
+    font-size: 45px;
+}
+
+h2 {
+    color: black;
+    font-size: 35px;
+}
+
+p, li, a {
+    color: black;
+    font-size: 25px;
+}
+
+
+/* grid */
+@media only screen and (min-width: 1700px) {
+    #wrapper {
+        background-color: #79a9d1;
+    
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    
+        display: grid;
+    
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    
+        grid-template-areas:
+        "top"
+        "process"
+        "sources"
+        "requirements"
+        "concept"
+        "genre"
+        "platform"
+        "story"
+        "Ae"
+        "gameplay"
+        "mockups"
+        "about";
+    }
+}
+@media only screen and (max-width: 1700px) {
+    #wrapper {
+        background-color: #79a9d1;
+    
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    
+        display: grid;
+    
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    
+        grid-template-areas:
+        "top"
+        "process"
+        "sources"
+        "requirements"
+        "concept"
+        "genre"
+        "platform"
+        "story"
+        "Ae"
+        "gameplay"
+        "mockups"
+        "about";
+    }
+}
+@media only screen and (max-width: 1300px) {
+    #wrapper {
+        background-color: #79a9d1;
+    
+        margin: 1rem;
+
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    
+        display: grid;
+    
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    
+        grid-template-areas:
+        "top"
+        "process"
+        "sources"
+        "requirements"
+        "concept"
+        "genre"
+        "platform"
+        "story"
+        "Ae"
+        "gameplay"
+        "mockups"
+        "about";
+    }
+}
+@media only screen and (max-width: 850px) {
+    #wrapper {
+        background-color: #79a9d1;
+    
+        margin: 0rem;
+
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    
+        display: grid;
+    
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    
+        grid-template-areas:
+        "top"
+        "process"
+        "sources"
+        "requirements"
+        "concept"
+        "genre"
+        "platform"
+        "story"
+        "Ae"
+        "gameplay"
+        "mockups"
+        "about";
+    }
+}
+
+
+#top {
+    grid-area: top;
+    border-bottom: 2px solid blue;
+}
+#process {
+    grid-area: process;
+    border-bottom: 2px solid blue;
+}
+#sources {
+    grid-area: sources;
+    border-bottom: 2px solid blue;
+}
+#requirements {
+    grid-area: requirements;
+    border-bottom: 2px solid blue;
+}
+#concept {
+    grid-area: concept;
+    border-bottom: 2px solid blue;
+}
+#genre {
+    grid-area: genre;
+    border-bottom: 2px solid blue;
+}
+#platform {
+    grid-area: platform;
+    border-bottom: 2px solid blue;
+}
+#story {
+    grid-area: story;
+    border-bottom: 2px solid blue;
+}
+#Ae {
+    grid-area: Ae;
+    border-bottom: 2px solid blue;
+}
+#gameplay {
+    grid-area: gameplay;
+    border-bottom: 2px solid blue;
+}
+#mockups {
+    grid-area: mockups;
+    border-bottom: 2px solid blue;
+}
+#about {
+    grid-area: about;
+    border-bottom: 2px solid blue;
+}
